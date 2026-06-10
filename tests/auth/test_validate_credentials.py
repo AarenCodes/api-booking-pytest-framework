@@ -4,7 +4,7 @@ from config.settings import BASE_URL
 from data.auth_payloads import VALID_AUTH_PAYLOAD
 
 
-def test_create_auth_token():
+def test_validate_credentials():
     """
     Verify valid credentials generate an authentication token.
     """
