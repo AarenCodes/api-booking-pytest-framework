@@ -107,7 +107,7 @@ def test_missing_password():
 
     print(
         f"[PAYLOAD] username=admin"
-        f"password=<missing>"
+        f" password=<missing>"
     )
 
     response = requests.post(
@@ -151,10 +151,9 @@ def test_missing_username():
     print(f"[REQUEST] POST {BASE_URL}/auth")
 
     print(
-        "[PAYLOAD] username=<missing> "
-        "password=********"
+        f"[PAYLOAD] username={MISSING_PASSWORD_PAYLOAD['username']} password=<missing>"
+    
     )
-
     response = requests.post(
         f"{BASE_URL}/auth",
         json=MISSING_USERNAME_PAYLOAD
