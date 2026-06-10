@@ -9,4 +9,6 @@ def test_api_health_check():
 
     response = requests.get(f"{BASE_URL}/ping")
 
-    assert response.status_code == 201
+    assert response.status_code == 201, (
+        f"Expected status code 201, got {response.status_code}"
+    )
