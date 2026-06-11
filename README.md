@@ -1,34 +1,25 @@
-Auth
-- create auth token
-- invalid username
-- invalid password
-- missing username
-- missing password
+# API Booking Pytest Framework
 
-Booking create
-- create booking with valid payload
-- create booking with missing firstname negative test
+Python API automation framework built using pytest and requests.
 
-Booking read
-- create booking, capture bookingid, get booking by ID
-- validate retrieved booking matches payload
+## Features
 
-Booking delete
-- create booking
-- create token
-- delete booking
-- verify deleted booking returns 404
+- Health check validation
+- Authentication testing
+  - Valid credentials
+  - Invalid username
+  - Invalid password
+  - Missing username
+  - Missing password
 
-Booking update
-- create booking
-- create token
-- update booking with PUT
-- validate updated response matches updated payload
+## Tech Stack
 
-Framework structure
-- config/settings.py
-- data payload files
-- helper functions
-- organized tests by module
-- pytest + requests
-- logging with -s
+- Python
+- Pytest
+- Requests
+- Git
+- GitHub
+
+## Run Tests
+
+pytest -v
