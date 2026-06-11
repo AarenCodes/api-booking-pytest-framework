@@ -17,3 +17,11 @@ def get_booking(booking_id):
     )
 
     return response
+
+def delete_booking(booking_id, token):
+    response = requests.delete(
+        f"{BASE_URL}/booking/{booking_id}",
+        cookies={"token": token}
+    )
+
+    return response
