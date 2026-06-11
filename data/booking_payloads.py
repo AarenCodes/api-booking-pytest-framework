@@ -20,3 +20,15 @@ MISSING_FIRSTNAME_BOOKING_PAYLOAD = {
     },
     "additionalneeds": "Breakfast"
 }
+
+UPDATED_BOOKING_PAYLOAD = {
+    "firstname": "Aaren",
+    "lastname": "Updated",
+    "totalprice": 250,
+    "depositpaid": False,
+    "bookingdates": {
+        "checkin": "2026-07-01",
+        "checkout": "2026-07-05"
+    },
+    "additionalneeds": "Dinner"
+}

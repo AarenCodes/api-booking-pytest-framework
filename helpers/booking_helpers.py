@@ -25,3 +25,12 @@ def delete_booking(booking_id, token):
     )
 
     return response
+
+def update_booking(booking_id, token, payload):
+    response = requests.put(
+        f"{BASE_URL}/booking/{booking_id}",
+        json=payload,
+        cookies={"token": token}
+    )
+
+    return response
